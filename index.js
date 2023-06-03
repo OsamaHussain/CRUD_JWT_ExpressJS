@@ -43,7 +43,7 @@ app.use('/', (req, res)=>{
             "Update User by Email": "Go to /api/update/ url and You need to provide authorization token in header which you will receive at the time of signup and you also need to pass email in json format in body to update user by email",
             "Update User by ID": "Go to /api/update/:ID url and You need to provide authorization token in header which you will receive at the time of signup and you also need to pass ID in URL parameter in :ID to update user by id",
             "Delete User by Email": "Go to /api/delete/ url and You need to provide authorization token in header which you will receive at the time of signup and you also need to pass email in json format in body to delete user by email",
-            "Delete User by ID": "Go to /api/delete/:ID url and You need to provide authorization token in header which you will receive at the time of signup and you also need to pass ID in URL parameter in :ID to delete user by id",
+            "Delete User by ID": "Go to /api/delete/:ID url and You need to provide authorization token in header which you will receive at the time of signup and you also need to pass ID in URL parameter in :ID to delete user by id"
         }
     });
 });
