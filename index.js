@@ -14,7 +14,8 @@ app.use(express.json());
 // All Routes
 app.use('/api', userRouter);
 app.use('/', (req, res)=>{
-    return res.status(200).json({
+    
+    const obj = {
         "Path": {
             "Main": "https://crudjwtexpressjs-production.up.railway.app/",
             "Signup":"https://crudjwtexpressjs-production.up.railway.app/api/signup/",
@@ -45,7 +46,8 @@ app.use('/', (req, res)=>{
             "Delete User by Email": "Go to /api/delete/ url and You need to provide authorization token in header which you will receive at the time of signup and you also need to pass email in json format in body to delete user by email",
             "Delete User by ID": "Go to /api/delete/:ID url and You need to provide authorization token in header which you will receive at the time of signup and you also need to pass ID in URL parameter in :ID to delete user by id"
         }
-    });
+    }
+    res.send(`<pre>${JSON.stringify(obj, null, 4)}</pre>`);
 });
 
 
