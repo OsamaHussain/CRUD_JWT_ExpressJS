@@ -12,7 +12,7 @@ connectDB();
 app.use(express.json());
 
 // All Routes
-app.use('/api/user', userRouter);
+app.use('/api', userRouter);
 
 
 const PORT = process.env.PORT || 5000;
